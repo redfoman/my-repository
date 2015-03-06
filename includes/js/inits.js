@@ -279,6 +279,7 @@ $(function() {
 	  event.preventDefault();
   });
 
+  /*
   $(window).bind('hashchange', function(e){ 
 	var queryString = $.param.fragment();
 	var modpage = $.bbq.getState("modpage");
@@ -320,6 +321,7 @@ $(function() {
 	  }
 	}
   });
+  */
   
   //search page
   $("#kword").on("keyup",function(){
