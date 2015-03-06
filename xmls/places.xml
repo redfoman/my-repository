@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><webstudio_xml><author><name>cyprus.wiz-guide.com</name></author><link href="http://cyprus.wiz-guide.com/_xml_feed/app_feed/places.php" rel="self" type="application/atom+xml" /><id>places</id><title>cyprus.wiz-guide.com - places</title><places>  <page>1</page>
-          <next_page>2</next_page><place>
+          <next_page>2</next_page>
+		  <place>
 			<id>579</id>
 			<name>Bavarian </name>
 			<headtitle>Deli / Restaurant </headtitle>
