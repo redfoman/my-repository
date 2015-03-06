@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
     xmlns:gap       = "http://phonegap.com/ns/1.0"
@@ -17,3 +18,29 @@
         android:largeScreens="false" 
         android:smallScreens="false" />
 </gap:config-file>	
+=======
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    versionCode = "10" 
+    version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>BD Test App</name>
+
+    <description>
+      An example for phonegap build docs. 
+    </description>
+
+    <author href="https://bdigital.com" email="support@bdigital.com">
+      BD 
+    </author>
+
+    <!--
+      This allows your app to load assets from all *.phongap.com domains
+    -->
+    <access origin="http://wiz-guide.com" subdomains="true" />
+</widget>
+>>>>>>> origin/master

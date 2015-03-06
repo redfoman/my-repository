@@ -81,7 +81,11 @@
 $(function() {
   $.ajax({
 	 type: "GET",
+<<<<<<< HEAD
 	 url: "https://github.com/redfoman/my-repository/blob/master/xmls/places.xml",
+=======
+	 url: "http://cyprus.wiz-guide.com/_xml_feed/app_feed/places.php",
+>>>>>>> origin/master
 	 dataType: "xml",
 	 success: function(xml) {
 		 $(xml).find('place').each(function(){
