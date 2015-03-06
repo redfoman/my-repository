@@ -81,7 +81,7 @@
 $(function() {
   $.ajax({
 	 type: "GET",
-	 url: "http://192.168.0.200/sites/test/xml/1/xmls/places.xml",
+	 url: "http://cyprus.wiz-guide.com/_xml_feed/app_feed/places.php",
 	 dataType: "xml",
 	 success: function(xml) {
 		 $(xml).find('place').each(function(){
