@@ -1,0 +1,496 @@
+
+<!DOCTYPE>
+<html>
+<head>
+<title>Eat, Dring or Both?</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
+<meta name="author" content="BDigital Web Solutions" />
+<meta charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,greek' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,greek' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,greek' rel='stylesheet' type='text/css'>
+<link href="includes/css/style.css" rel="stylesheet" type="text/css" />
+<link href="includes/css/site.css" rel="stylesheet" type="text/css" />
+<link href="includes/css/flexslider.css" rel="stylesheet" type="text/css" />
+<script src="includes/js/jquery.js"></script>
+<script src="includes/js/jquery.ba-bbq.min.js"></script>
+<script src="includes/js/functions.js"></script>
+<script src="includes/js/modernizr.js"></script>
+</head>
+<body>
+<div class="popup" id="popup">
+  <div class="pop_body" id="d_body">
+    <p class="wait_msg">Loading...</p>
+  </div>
+  <div class="pop_body" id="s_body">
+    <div id="ShowMapBlock" class="PopUpBlock PopUpSBlock ShowMapBlock"> <a class="closePopUp">close popup</a>
+      <h1>ΤΟΠΟΘΕΣΙΑ</h1>
+      <div class="blo_body">
+        <div id="map-canvas"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<header class="page_h clearfix"> <a href="index.html"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/home_icon.png" width="40" height="40" class="f_left logo" title="home" /></a>
+  <h1 class="f_left">EAT, DRINK OR BOTH?</h1>
+  <a id="main_nav" href="#sidr-right">Menu</a> </header>
+<nav id="sidr-right" class="main_nav">
+  <div class="inbox"> <a href="#" class="close_nav" onClick="$.sidr('close', 'sidr-right');return false;">close</a>
+    <div class="mem_info">
+      <p class="sub_name">Panayiotis<br />
+        Spyrou</p>
+      <p class="sub_photo"><img src="http://cyprus.wiz-guide.com/assets/modules/kat/subscribers/3/profile_pic.jpg?103255"   alt="Panayiotis S"  width="100" height="100" /></p>
+      <p class="logout"><a id="FBlogOutBtn" href="eat_drink_both.html?modid=SubAccount&amp;actid=logout">LOG-OUT</a></p>
+    </div>
+    <ul class="mmenu">
+      <li><a href="mobile.php?modid=6" class="mm_btn">where is everybody?</a></li>
+      <li class="emphasis"><a href="agapame.html?modid=1&sctid=1" class="mm_btn sct_1" >αγαπαμε!</a></li>
+      <li><a href="eat_drink_both.html?modid=2&fpar1=E&fpar2=3" class="mm_btn sct_2 geobtn" >eat, drink or both?</a></li>
+      <li><a href="ti_pezei.html?modid=3" class="mm_btn sct_3" >τι παιζει?</a></li>
+      <li><a href="tease_me.html?modid=1&sctid=4" class="mm_btn sct_4" >tease me!</a></li>
+      <li><a href="be_wizer.html?modid=1&sctid=5" class="mm_btn sct_5" >be a wizer :)</a></li>
+    </ul>
+    <div class="sbar_bot">
+      <div class="search clearfix"> <a href="eat_drink_both.html?modid=10" class="mm_btn"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/search_icon.png" class="icon" width="26" height="24" alt="search" />Search</a> </div>
+      <li class="weather">
+        <div class="inner">
+          <div class="in_cell"><img src='modules/ws_mod_kat_01/blocks/weather/icons/30.png' height=20 alt='Partly Cloudy' class="icon" /><span class="temp">17&deg;C</span><br />
+            <small>Location: Λευκωσία</small></div>
+        </div>
+      </li>
+    </div>
+  </div>
+</nav>
+<div class="PlaFilter clearfix">
+  <ul class="cats">
+    <li class="sel" id="placat_E"><a href="eat_drink_both.html?modid=2&lat=35.166667&lng=33.366667&fpar2=3&fpar1=E" class="catbox">EAT</a></li>
+    <li id="placat_D"><a href="eat_drink_both.html?modid=2&lat=35.166667&lng=33.366667&fpar2=3&fpar1=D" class="catbox">DRINK</a></li>
+    <li id="placat_B"><a href="eat_drink_both.html?modid=2&lat=35.166667&lng=33.366667&fpar2=3&fpar1=B" class="catbox">BOTH?</a></li>
+  </ul>
+  <ul class="filters">
+    <li><a href="eat_drink_both.html?modid=2&fpar1=E&fpar2=1" class="filter alpa">ΑΛΦΑΒΗΤΙΚΑ</a>
+      <div class="smenu"> <a href="eat_drink_both.html?modid=2&fpar1=E&fpar2=1&fpar3=1" class="l2">ΛΕΥΚΩΣΙΑ</a> <a href="eat_drink_both.html?modid=2&fpar1=E&fpar2=1&fpar3=2" class="l2">ΛΕΜΕΣΟΣ</a> </div>
+    </li>
+    <li><a href="eat_drink_both.html?modid=2&fpar1=E&fpar2=2" class="filter favo">ΑΓΑΠΗΜΕΝΑ</a></li>
+    <li class="sel"><a href="eat_drink_both.html?modid=2&fpar1=E&fpar2=3" id="geo_btn" class="filter near geobtn">NEAR ME</a></li>
+    <li><a href="eat_drink_both.html?modid=2&fpar1=E&fpar2=4" class="filter tred">TRENDING</a></li>
+  </ul>
+</div>
+<section class="ModPages SectionPlaces">
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=532">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΓΑΣΤΡΟ-ΤΑΒΕΡΝΑ</h3>
+        <h2>SKEWERS </h2>
+        <p class="w_sum">Κλήμεντος 41-43, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/532/images/sum_skewers.jpg" class="teaser" alt="Skewers "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=91">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ETHNIC - ΚΙΝΑ </h3>
+        <h2>CHINA SPICE </h2>
+        <p class="w_sum">Πινδάρου 26, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201411/91/images/sum_china_spice.jpg" class="teaser" alt="China Spice "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=12">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">BURGER AMERICAN DINNER</h3>
+        <h2>ARTISAN BURGERBAR </h2>
+        <p class="w_sum">Στασάνδρου 20, Λευκωσία </p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201411/12/images/sum_artisans01.jpg" class="teaser" alt="Artisan Burgerbar "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=426">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ETHNIC - ΣΥΡΙΑ </h3>
+        <h2>SAWA </h2>
+        <p class="w_sum">Κλήμεντος 31, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/426/images/sum_sawa.jpg" class="teaser" alt="Sawa "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=571">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΜΕΖΕΔΟΠΩΛΕΙΟ </h3>
+        <h2>ΚΕΧΡΙΜΠΑΡΙ (ΤΟ)</h2>
+        <p class="w_sum">Ξάνθης Ξενιέρου 23, Λευκωσία </p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201502/571/images/sum_kexribari.jpg" class="teaser" alt="Κεχριμπάρι (Το)"  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=324">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li class="on">5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΔΗΜΙΟΥΡΓΙΚΗ/ ΓΚΟΥΡΜΕ</h3>
+        <h2>NO RESERVATIONS </h2>
+        <p class="w_sum">Λεωφ. Στασίνου 16, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/324/images/sum_no_reservations.jpg" class="teaser" alt="No Reservations "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=14">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΜΑΕΙΡΚΟ</h3>
+        <h2>ΒΑΣΙΛΙΚΗ </h2>
+        <p class="w_sum">Διγενή Ακρίτα 28Α, Αγορά Αγίου Αντωνίου, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201411/14/images/sum_vasiliki01.jpg" class="teaser" alt="Βασιλική "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=495">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΜΕΖΕΔΟΠΩΛΕΙΟ</h3>
+        <h2>ΧΡΟΝΟΠΕΡΠΑΤΗΜΑΤΑ </h2>
+        <p class="w_sum">Ξάνθη Ξενιέρου 5, παλιά Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/495/images/sum_xronoperpatimata.jpg" class="teaser" alt="Χρονοπερπατήματα "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=557">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ETHNIC - ΙΤΑΛΙΑ </h3>
+        <h2>ISOLANI PIZZA BAR</h2>
+        <p class="w_sum">Αγορά Αγίου Αντωνίου, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201501/557/images/sum_isolani3.jpg" class="teaser" alt="Isolani Pizza Bar"  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=188">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">PIZZA</h3>
+        <h2>DA PAOLO </h2>
+        <p class="w_sum">Κωνστ. Παλαιολόγου 52, παλιά Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/188/images/sum_dapaolo.jpg" class="teaser" alt="Da Paolo "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=421">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">MΑΕΙΡΚΟ</h3>
+        <h2>ΣΤΟΑ ΤΟΥ ΔΗΜΗΤΡΗ (Η) </h2>
+        <p class="w_sum">Διγενή Ακρίτα 28Ε, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/421/images/sum_stoademetri.jpg" class="teaser" alt="Στοά του Δημήτρη (Η) "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=200">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ETHNIC - ΛΙΒΑΝΟΣ</h3>
+        <h2>FANOUS </h2>
+        <p class="w_sum">Σόλωνος 7Γ, παλιά Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/200/images/sum_fanous.jpg" class="teaser" alt="Fanous "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=88">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ETHNIC - ΙΣΠΑΝΙΑ </h3>
+        <h2>CASA VIEJA </h2>
+        <p class="w_sum">Αρχαγγέλου Μιχαήλ 3, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201411/88/images/sum_casa_vieja.jpg" class="teaser" alt="Casa Vieja "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=207">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΠΑΡΑΔΟΣΙΑΚΗ ΤΑΒΕΡΝΑ</h3>
+        <h2>ΖΥΓΟΣ</h2>
+        <p class="w_sum">Αισχύλου 5, Λαϊκή Γειτονιά, Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/207/images/sum_zygos.jpg" class="teaser" alt="Ζυγός"  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=419">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΚΥΠΡΙΑΚΗ ΚΟΥΖΙΝΑ</h3>
+        <h2>ΣΠΙΤΙΚΟΝ ΤΗΣ ΛΟΥΚΙΑΣ (TO) </h2>
+        <p class="w_sum">Ονασαγόρου, παλιά Λευκωσία </p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/419/images/sum_spitikonloukias.jpg" class="teaser" alt="Σπιτικόν της Λουκίας (To) "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=490">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ETHNIC - ΙΤΑΛΙΑ</h3>
+        <h2>TAVOLINO</h2>
+        <p class="w_sum">Ονασαγόρου 35, παλιά Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/490/images/sum_tavolino.jpg" class="teaser" alt="Tavolino"  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=189">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΕΛΛΗΝΙΚΟΣ ΓΥΡΟΣ</h3>
+        <h2>DERLICIOUS</h2>
+        <p class="w_sum">Λήδρας και Ιπποκράτους, παλιά Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/189/images/sum_derliciousledras.jpg" class="teaser" alt="Derlicious"  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=417">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">ΔΗΜΙΟΥΡΓΙΚΗ ΕΛΛΗΝΙΚΗ ΚΟΥΖΙΝΑ</h3>
+        <h2>ΣΟΥΞΟΥ ΜΟΥΞΟΥ ΜΑΝΤΑΛΑΚΙΑ </h2>
+        <p class="w_sum">Ονασαγόρου 47, παλιά Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/417/images/sum_souxoumouxou.jpg" class="teaser" alt="Σούξου Μούξου Μανταλάκια "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=191">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">BAR RESTAURANT</h3>
+        <h2>DOMUS </h2>
+        <p class="w_sum">Κοραή 5, παλιά Λευκωσία</p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201412/191/images/sum_domus.jpg" class="teaser" alt="Domus "  width="480" height="120" /></div>
+  <div class="list_box" data-link="eat_drink_both.html?modid=2&amp;plaid=123">
+    <div class="list_rate">
+      <ul class="rateimgs wizrate">
+        <li class="on">1</li>
+        <li class="on">2</li>
+        <li class="on">3</li>
+        <li class="on">4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="info">
+      <div class="cell"><span class="sct_icons sct_2_icon">&nbsp;</span></div>
+      <div class="cell">
+        <h3 class="headtitle">STREET FOOD </h3>
+        <h2>AVO </h2>
+        <p class="w_sum">Ονασαγόρου, παλιά Λευκωσία </p>
+      </div>
+      <div class="cell"><img src="http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png" alt="read more" width="15" height="25" /></div>
+    </div>
+    <img src="http://cyprus.wiz-guide.com/assets/modules/kat/places/201411/123/images/sum_avo.jpg" class="teaser" alt="Avo "  width="480" height="120" /></div>
+</section>
+<footer class="ofpage">
+  <div class="bot_banner">
+    <script type='text/javascript'>document.write('<iframe src="http://ads.adstore.com.cy/__gb/?zonid=26&sizid=4&'+(new Date()).getTime()+'" width="320" height="75" frameborder="0" scrolling="no"></iframe>');</script>
+  </div>
+  <div class="credits">
+    <p><a href="https://twitter.com/WizCyprus" target="tw">FOLLOW US ON TWITTER</a> &nbsp;&nbsp; <a href="https://www.facebook.com/WizCyprus" target="fb">ADD US ON FACEBOOK</a></p>
+    <p><a href="http://www.bdigital.com/" target="bdigital"><small>Built by BDigital</small></a>&nbsp;|&nbsp;<a href="http://www.bdigital.com/" target="bdigital"><small>Powered by WebStudio</small></a></p>
+  </div>
+</footer>
+<script src="includes/js/jquery.plugin.min.js"></script>
+<script src="includes/js/jquery.maxlength.min.js"></script>
+<script src="includes/js/jquery.flexslider.js"></script>
+<script src="includes/js/jquery.sidr.min.js"></script>
+<script src="includes/js/inits.js"></script>
+</body>
+</html>

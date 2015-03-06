@@ -1,0 +1,585 @@
+html { -webkit-text-size-adjust: none;	}
+body { margin:0; padding:0; background-color:#fff; -webkit-touch-callout:none; -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; -webkit-tap-highlight-color:rgba(0,0,0,0); }
+body, p, table, thead, tbody, tfoot, tr, td, th, span, ul, li, input, select, textarea, time { font-family:"Open Sans", Arial, serif; font-weight:normal; font-size:14px; line-height:18px; color:#000000; }
+table,td{border:none;}
+img{border:none;}
+p,ul,li,form,label { padding:0; margin:0; }
+section,article,aside,figure,header,footer,nav,main { padding:0; margin:0; border:0; outline:0; display:block;}
+ul,li { list-style:none; list-style-image:none; }
+.table_collapse { border-collapse:collapse;padding:0; margin:0; border:0; }
+.table_collapse td { padding:0; margin:0; }
+a { cursor:pointer;}
+a:link,  a:visited { color:#59d3ff; text-decoration: none; }
+a:active, a:hover { text-decoration:none !important; color:#000; }
+
+.blue_bg { background-color:#64cdf5; }
+input { border:1px solid #a7abae; height:28px; color:#000000; background-color:#ffffff; -webkit-appearance: none; padding-left:5px; } 
+select { border:1px solid #a7abae; height:32px; color:#000000; background-color:#ffffff; -webkit-appearance: none;} 
+textarea { border:1px solid #a7abae; color:#000000; padding:5px; -webkit-appearance: none; border-radius:0;}
+.display { display:block; }
+.hidden { display:none !important; }
+
+.ed_body { line-height:20px !important;}
+.ed_body p { margin:0 0 18px 0 !important; line-height:20px !important; }
+.ed_body p:last-child { margin-bottom:0 !important; }
+
+.clear { clear: both; font-size:0; line-height:0; margin:0; padding:0; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } /*to container of which  all the children are floating*/
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.border_r_2 { border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
+.border_r_3 { border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+.border_r_4 { border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+.border_r_5 { border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+.border_r_6 { border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; }
+.border_r_8 { border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; }
+
+h1,h2,h3,h4,h5 { margin:0; padding:0;}
+h1 { font-family: 'Open Sans Condensed', sans-serif;font-size:18px; line-height:40px;color:#fff; font-weight:700;}
+h2 { font-family: 'Open Sans Condensed', sans-serif; font-size:20px; line-height:22px; color:#fff; font-weight:700;}
+h3 { font-family: 'Open Sans Condensed', sans-serif; font-size:15px; line-height:19px; font-weight:700; color:#000; padding:2px 0 2px 0;}
+h3.headtitle { color:#fff; text-shadow:1px 1px #000; height:19px; overflow:hidden; }
+
+h4 { font-size:14px; line-height:16px; font-weight:700;}
+
+p.subhead { float:left; width:157px; height:36px; background-color:#0069ff; line-height:36px; font-size:22px; color:#fff; margin-bottom:15px; text-align:center; }
+hr { height:1px; border:0; background-color:#e4e4e4; margin:15px 0 15px 0; padding:0; clear:both; }
+small { font-size:11px; line-height:13px;}
+strong { font-weight:700; }
+time { color:#000000; font-size:11px; line-height:13px;}
+p.err_msg { display:none; margin-bottom:12px; border:1px solid #ff0000; padding:10px 10px 10px 15px; color:#ff0000; font-weight:400; background-color:#fff; }
+.error { font-style:italic; color:#ff0000;}
+.no_photo { min-height:10px !important; padding-left:0 !important;}
+.full_w { width:100%;}
+.f_left { float:left; }
+.f_right { float:right; }
+.pointer { cursor:pointer; }
+.notfound { padding:10px;}
+.pos_rel { position:relative;}
+
+:-ms-input-placeholder { color:#c7c7c9; font-style:italic; font-size:12px; }
+:-ms-input-placeholder { color:#c7c7c9; font-style:italic; font-size:12px; }
+::-webkit-input-placeholder { color:#c7c7c9; font-style:italic; font-size:12px; }
+
+.maxlength-feedback { display:block; font-size:12px; font-style:italic; padding-top:2px; color:#fff; }
+.maxlength-full { background-color: transparent; }
+.maxlength-overflow { background-color: transparent;}
+.maxlength-disabled { opacity: 0.5; }
+
+#popup_overlay { display:none; position:fixed; top:0; left:0; bottom:0; right:0; background-color:#fff; opacity:0.7; filter:Alpha(opacity=70); z-index:10; }
+.popup { display:block; position:fixed; width:100%; top:0; left:100%; bottom:0; right:0; z-index:10001; background-color:#64cdf5;}
+.popup .wait_msg { color:#fff; padding:20px 0 20px 0;}
+.popup .pop_body { display:none; text-align:center; position:relative; }
+
+.ofpage { height:75px;} /*for fixed banner */
+.bot_banner { width:320px; height:75px; margin:0 auto; /*background-color:#000; position:fixed; bottom:0; right:0; left:0;*/ z-index:11; }
+
+.ofpage .credits { font-family:Arial; font-weight:normal; color:#808183; font-size:12px; line-height: 16px; margin:5px 0 5px 0; padding:5px 0 5px 0; text-align:center; }
+.ofpage .credits p a:link, .ofpage .credits p a:visited { font-family:Arial; font-weight:normal; color:#808183; font-size:12px; line-height: 16px;}
+.ofpage .credits p a:hover, .ofpage .credits p a:active { text-decoration:underline; }
+
+/* Welcome Page */
+.TopOverPage { position:absolute; width:100%; top:0; left:0; right:0; bottom:0; z-index:1000; background-color:#64cdf5; }
+.TopOverPage .main_body { margin:0 auto; padding:15px 20px 0 20px; text-align:center; position:relative;}
+.TopOverPage img.wp_imgs { width:270px; height:auto;}
+.TopOverPage .log_block { margin-top:25px;}
+.TopOverPage .log_block p { text-align:center; margin-bottom:10px; color:#fff; font-size:22px; line-height:24px;}
+.TopOverPage .log_block p a:link, .TopOverPage .log_block p a:visited {color:#fff; font-size:22px; line-height:24px;}
+.TopOverPage .log_block p a:hover, .TopOverPage .log_block p a:active {color:#000; text-decoration:none; }
+
+/*************/
+.PopUpBlock { width:100%; height:100%; text-align:left; position:relative; }
+.PopUpBlock h1 { background-color:#009fff; padding:5px 0 5px 15px; color:#fff; font-weight:300;}
+.PopUpBlock .blo_body { position:absolute; top:50px; left:0; right:0; bottom:0; background-color:#64cdf5; background-color:rgba(97,212,255,0.9);  -webkit-overflow-scrolling:touch; overflow:auto;}
+.PopUpBlock a.closePopUp { position:absolute; right:10px; top:8px; width:35px; height:35px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/minus_btn_w.png) no-repeat; text-indent:-9999px; }
+.PopUpBlock a.closePopUp:hover { text-decoration:none;}
+.PopUpBlock p.msg { color:#fff; font-style:italic; padding:12px; font-size:13px;}
+.PopUpBlock :-ms-input-placeholder { font-style: normal; font-size:13px; }
+.PopUpBlock :-ms-input-placeholder { font-style: normal; font-size:13px; }
+.PopUpBlock ::-webkit-input-placeholder { font-style: normal; font-size:13px; }
+.PopUpBlock input.field { border:1px solid #a3afbb; margin:12px auto 0 auto; text-align:center; padding:10px; height:40px; background-color:#fff; width:99%;}
+.PopUpBlock input.actbtn,
+.PopUpBlock input[type=submit] { min-width:100px; text-align:center; border:none; background-color:#019fff; color:#fff; height:44px; font-size:14px; font-weight:700; cursor:pointer;}
+.PopUpBlock input.actbtn:hover,
+.PopUpBlock input[type=submit]:hover { background-color:#0184d4; }
+.PopUpBlock input.actbtn:focus,
+.PopUpBlock input[type=submit]:focus { outline:none; }
+.PopUpBlock textarea { border:1px solid #a3afbb; margin-top:15px; text-align:center; padding:10px; height:100px; background-color:#fff; width:99%;}
+.PopUpBlock span.pup_arrow { float:left; position:absolute; width:96px; height:43px;left:50%;margin-left:-48px;bottom:-43px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/cin_down_arrow.png) no-repeat; }
+.PopUpBlock ::-webkit-scrollbar { width:5px; }
+.PopUpBlock ::-webkit-scrollbar-track { background-color:#ade8ff; border-left:1px solid #c9f3ff; }
+.PopUpBlock ::-webkit-scrollbar-thumb { background-color:#019fff; }
+.PopUpBlock .exLogMsg { color:#fff; text-align:center; font-size:12px; font-style:italic; padding-top:1px;}
+
+.PopUpSBlock { display:none; }
+
+/*QUESTIONS*/
+.QueAnsBlock { position:relative;}
+.QueAnsBlock .q_popup { display:none; position:absolute; top:60px; left:0; bottom:0; right:0; z-index:11; overflow:hidden; }
+.QueAnsBlock .q_popup > .pop_cont { display:table; width:100%; height:100%; }
+.QueAnsBlock .q_popup > .pop_cont > .pop_cell { display:table-cell; height:100%; vertical-align:middle; text-align:center;}
+.QueAnsBlock .q_popup #quepop_msg { width:250px; position:relative; left:-250px; padding:15px; background-color:#ff0000; color:#fff; white-space: nowrap; overflow:hidden; }
+.QueAnsBlock h1 { background:#009fff url(http://cyprus.wiz-guide.com/mobile/layout/images/question_icon2.png) no-repeat 8px 8px; padding-left:55px; }
+.QueAnsBlock .blo_body { max-height:100%; -webkit-overflow-scrolling:touch; overflow:auto; background-color:#64cdf5; }
+.QueAnsBlock .def_pad { padding:15px 10px 15px 10px;}
+.QueAnsBlock .qst_row { border-bottom:3px solid #fff; position:relative;}
+.QueAnsBlock .qst_row .sub_photo { position:absolute; top:15px; left:10px; width:50px; height:50px;}
+.QueAnsBlock .qst_row .sub_photo img { border-radius:25px;}
+.QueAnsBlock .qst_row .que_info { padding-left:60px; min-height:50px;}
+.QueAnsBlock h2 { font-family: 'Open Sans', sans-serif; font-size:18px !important; line-height:20px !important; }
+.QueAnsBlock p { color:#fff !important; }
+.QueAnsBlock p.text { padding-top:6px; font-size:16px; line-height:18px; }
+.QueAnsBlock p.small { padding-top:5px; font-size:10px; line-height:12px; }
+.QueAnsBlock .qst_ans { margin-top:30px;}
+.QueAnsBlock .qst_ans .ans { border-bottom:1px solid #fff; }
+.QueAnsBlock .qst_ans .ans p.text { padding-top:0; }
+.QueAnsBlock .com_box textarea { width:100%; margin:0;}
+.QueAnsBlock input[type=submit] { float:right; margin-top:10px; min-width:160px; width: auto !important; padding:0 20px 0 20px;}
+
+/* SUB */
+.SubSignBlock .blo_inner { padding:8; text-align:center; }
+.SubSignBlock p.err_msg { font-size:13px; padding:0; border:none; text-shadow:1px 1px #027cc6; margin:12px 0 0 0; color:#fff; background-color:transparent; text-align:left;}
+.SubSignBlock input[type=submit] { margin-top:12px; }
+.SubSignBlock .err_msg_show { display:block !important; }
+.SubSignBlock span.lab_error { display:block; padding-top:2px; text-align:left; font-size:13px; line-height:14px; color:#ff0000; }
+.SubSignBlock p.def { padding-top: 16px;}
+.SubSignBlock p.label { font-size:18px; color:#fff; }
+.SubSignBlock a.tw_btn { text-align:left; display:block; width:193px; margin:0 auto; height:17px; padding:3px 0 4px 2px; border:1px solid #00b3d7; 
+background-color:#00c8ee; color:#fff; text-shadow:1px 1px #00b3d7; font-size:13px; font-weight:bold; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;}
+.SubSignBlock a.tw_btn > img { vertical-align:middle; position:relative; top:-1px; margin-right:5px; width:20px; height:20px;} 
+.SubSignBlock a.tw_btn:hover { text-decoration:none; background-color:#00bfe5; }
+
+/*MAP*/
+.ShowMapBlock h1 { background:#009fff url(http://cyprus.wiz-guide.com/mobile/layout/images/nearme_icon.png) no-repeat 8px 8px; padding-left:55px; }
+.ShowMapBlock .blo_body #map-canvas,
+.ShowMapBlock .blo_body #mul_map-canvas { width:100%; height:100%;}
+.ShowMapBlock .gm-style-iw { width:300px !important; text-align:left;  }
+.ShowMapBlock .gm-style-iw > div { overflow: visible !important; max-height:300px !important; }
+.ShowMapBlock .gm-style-iw > div > div { overflow: visible !important; }
+.ShowMapBlock .gm-style-iw p { font-size:12px; line-height:14px;}
+
+/*CHECK IN*/
+.CheckInBlock h1 { background:#009fff url(http://cyprus.wiz-guide.com/mobile/layout/images/checkin_icon.png) no-repeat 8px 8px; padding-left:55px; }
+/* form */
+.CheckInForm p.msg { padding:15px; color:#fff;}
+.CheckInForm h1 { background-color:transparent !important; color:#fff; text-align:center; border-bottom:4px solid #fff; padding:10px 0 10px 0; font-weight:300; position:relative;}
+.CheckInForm #overlay_bg { display:none; position:absolute; top:0; left:0; bottom:0; right:0; background-color:#fff;opacity:0.4;filter:Alpha(opacity=40);z-index:11; }
+.CheckInForm .main_body { text-align:center; padding:50px 6px 20px 6px; }
+.CheckInForm select { margin-top:10px; width:250px; height:40px; padding-left:8px; }
+.CheckInForm .act_btns { margin-top:30px; }
+.CheckInForm .act_btns input.actbtn { width:48% !important; margin-top:0;}
+.CheckInForm .act_btns input.actbtn:first-child { float:left;}
+.CheckInForm .act_btns input.actbtn:last-child { float:right;}
+.CheckInForm #popup { display:none; }
+.CheckInForm #popup > .pop_cont > .pop_cell #pop_msg { width:250px; position:relative; left:-280px; padding:15px; background-color:#ff0000; color:#fff; }
+
+/**********************************/
+.sidr{ display:none;position:absolute;position:fixed;top:0;height:100%; width:180px; z-index:999999;overflow-x:none;overflow-y:auto;background:#62cdf6;}
+.sidr.right {left:auto;right:-180px;}
+.sidr.left {left:-180px;right:auto}
+
+/**********GENERAL ***************/
+.page_h { height:40px; padding:8px 8px 8px 8px; background-color:#62cdf6; overflow:hidden; }
+.page_h .logo { margin-right:8px; }
+.page_h #main_nav { float:right; width:77px; height:40px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/menu_icon.png) no-repeat; text-indent:-9999px; }
+
+.main_nav { display:none; }
+.main_nav .inbox { position:relative; padding-bottom:150px; }
+.main_nav a.close_nav { width:20px; height:20px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/close_btn.png) no-repeat; text-indent:-9999px; position:absolute; top:8px; right:10px; }
+.main_nav a.close_nav:hover { text-decoration:none; }
+.main_nav .mem_info { padding:35px 12px 20px 12px; }
+.main_nav .mem_info p.sinbtn { text-align:center; margin-top:8px;}
+.main_nav .mem_info p.sinbtn img { width:100%;}
+.main_nav .mem_info .sub_name{ font-size:16px; line-height:20px; color:#fff; font-weight:700; padding-left:5px;}
+.main_nav .mem_info .sub_photo { margin-top:10px;}
+.main_nav .mem_info .sub_photo img { border-radius:50px; -moz-border-radius:50px; -webkit-border-radius:50px; }
+.main_nav .mem_info .logout { margin-top:10px;}
+.main_nav .mem_info .logout > a { display:block; width:100px; padding:5px 0 5px 0; background-color:#019fff; text-align:center; color:#fff;}
+.main_nav .mem_info .logout > a:hover { background-color:#0184d4; }
+
+.main_nav ul.mmenu li { border-bottom:2px solid #fff; padding:15px 10px 15px 15px;}
+.main_nav ul.mmenu li:first-child { border-top:2px solid #fff; }
+.main_nav ul.mmenu li a { color:#fff; font-size:14px; line-height:16px; font-weight:700; }
+.main_nav ul.mmenu li a:hover { color:#000; text-decoration:none; }
+/*.main_nav ul.mmenu li.emphasis { background-color:#53b6dc;}*/
+
+.sbar_bot { position:absolute; left:0; right:0; bottom:0; padding:0 10px 10px 16px; } /*rel to inbox pbot 80*/
+.weather { margin-top:20px;}
+.weather small { font-size:11px; display:block; padding-top:2px; color:#fff; text-shadow:1px 1px #10bdfd; }
+.weather img.icon { position:relative; vertical-align:middle; padding-right:5px;}
+.weather span.temp { font-size:18px; color:#fff; text-shadow:1px 1px #10bdfd;}
+
+.search img.icon { float:left; margin-right:8px;}
+.search a { color:#fff; font-size:20px; line-height:24px; font-weight:700;}
+.search a:hover { color:#fff;}
+
+/****************/
+.sct_icons { width:40px; height:40px; display:block; background-size:cover !important; background-repeat:no-repeat; background-position:center center;  }
+.sct_1_icon { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/agapame_over_icon.png); }
+.sct_2_icon { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/eatdrink_over_icon.png); }
+.sct_3_icon { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/tipaizei_over_icon.png); }
+.sct_4_icon { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/teaseme_over_icon.png); }
+.sct_5_icon { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/beawizer_over_icon.png); }
+.sct_6_icon { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/checkin_icon_b.png); }
+
+.nav_block { padding:8px;}
+.nav_block .nav_btn { display:block; background-color:#84dafd; width:49%; height:50px; line-height:50px; color:#fff; }
+.nav_block .nav_btn:hover { background-color:#59d4ff; text-decoration:none; }
+.nav_block .n_btn_l { float:left; text-align:left; border-radius:25px 0 0 25px;}
+.nav_block .n_btn_r { float:right; text-align:right;  border-radius:0 25px 25px 0;}
+
+/*Home Blocks*/
+.HomeBlocks .sct_block { padding:12px 10px 12px 10px; }
+.HomeBlocks .sct_block .inner_bl { display:table; width:100%;}
+.HomeBlocks .sct_block .inner_bl > .col { display:table-cell; vertical-align:top; }
+.HomeBlocks .sct_block .inner_bl > .col:nth-child(1) { width:40px; padding-right:10px;}
+.HomeBlocks .sct_block .inner_bl > .col:nth-child(3) { width:15px; padding-left:10px;}
+.HomeBlocks a.more_btn { float:right; width:15px; text-indent:-9999px; z-index:3; height:25px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/more_icon_white.png) no-repeat; }
+.HomeBlocks a.more_btn:hover { text-decoration:none; }
+
+.HomeMainArt { position:relative; }
+.HomeMainArt .info {position:absolute; bottom:0; left:0; right:0; min-height:64px; z-index:2; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/b_bg_op40.png) repeat;}
+.HomeMainArt h2 { color:#fff; max-height:44px; overflow:hidden;}
+.HomeMainArt h2 a:link, .HomeMainArt h2 a:visited { color:#fff;}
+.HomeMainArt h2 a:hover, .HomeMainArt h2 a:active { text-decoration:underline; }
+.HomeMainArt .sct_block .inner_bl > .col:nth-child(2),
+.HomeMainArt .sct_block .inner_bl > .col:nth-child(3) { vertical-align:middle !important;}
+
+.HomeLatestArt .sct_block { padding:12px 10px 16px 10px; min-height:80px;}
+.HomeLatestArt .sct_block .inner_bl > .col:nth-child(3) { padding-top:3px; }
+.HomeLatestArt .sct_6 { background-color:#ffd224;}
+.HomeLatestArt .sct_2 { background-color:#2bea79;}
+.HomeLatestArt .sct_3 { background-color:#0086ff;}
+.HomeLatestArt .sct_4 { background-color:#ff6b01;}
+.HomeLatestArt .sct_5 { background-color:#ff005c;}
+.HomeLatestArt h2 { font-size:24px; line-height:30px; color:#fff; font-weight:700; }
+.HomeLatestArt h2 a:link, .HomeLatestArt h2 a:visited { font-size:24px; line-height:30px; color:#fff; font-weight:700; }
+.HomeLatestArt p.sum { padding-top:4px; color:#fff; font-size:15px; line-height:17px;}
+.HomeLatestArt p.sum a:link, .HomeLatestArt p.sum a:visited { color:#fff; font-size:15px; line-height:17px; }
+.HomeLatestArt p.sum_s { padding-top:4px; color:#fff; font-size:11px; line-height:13px;}
+.HomeLatestArt p.sum_emp { padding-top:5px; font-family: 'Open Sans Condensed', sans-serif; font-weight:700; color:#fff; font-style:normal; font-size:13px; line-height:15px; }
+.HomeLatestArt p.sum_emp > img { float:left; margin-right:4px;}
+
+/* INNER PAGES*/
+.ModPages h2 { text-shadow:2px 1px #000;}
+.ModPages p.w_sum { color:#fff; padding-top:2px; text-shadow:1px 1px #000; font-size:12px; line-height:16px;}
+.ModPages .list_box { height:120px; background:#333; position:relative; border-top:1px solid #fff; overflow:hidden;}
+.ModPages .list_box .info { display:table; width:100%; position:relative; z-index:2;}
+.ModPages .list_box .info .cell { display:table-cell; vertical-align:middle; height:120px; }
+.ModPages .list_box .info .cell:first-child { width:40px; padding:0 10px 0 8px;}
+.ModPages .list_box .info .cell:last-child { width:15px; padding:0 8px 0 10px;}
+.ModPages .list_box img.teaser { position:absolute; top:0; left:0; right:0; z-index:1; opacity:1; -webkit-transition:0.5s; transition:0.5s;}
+.ModPages .list_box_hover img.teaser/*,
+.ModPages .list_box:hover img.teaser*/ { opacity:0.5; -webkit-transition:0.5s; transition:0.5s;}
+
+.ModDetPage .det_body { padding:12px 8px 20px 8px; }
+.ModDetPage h2 { color:#000;}
+.ModDetPage .sctblo { margin-top:16px;}
+.ModDetPage .photos { background-color:#eee; }
+.ModDetPage .overimg_block { position:absolute; bottom:0; left:0; right:0; z-index:100; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/w_bg_op70.png) repeat; }
+.ModDetPage .overimg_block .inner { padding:8px 10px 8px 15px; font-size:13px; line-height:15px; font-style:italic;}
+.ModDetPage .camIcon { bottom:38px; right:35px; display:block; position:absolute; width:41px; height:30px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/cam_icon.png) no-repeat; z-index:8; text-indent:-9999px;}
+
+
+/* Places Filter */
+.PlaFilter { background-color:#58d3ff; position:relative; z-index:5; }
+.PlaFilter ul { width:100%; border-top:1px solid #fff; height:35px; }
+.PlaFilter ul > li { float:left; }
+.PlaFilter ul > li > a { height:35px;}
+.PlaFilter a:hover, .PlaFilter a:active { text-decoration:none; }
+.PlaFilter ul.cats li { width:33.33%;}
+.PlaFilter ul.cats li > a.catbox { float:left; width:100%; text-align:center; border-right:1px solid #fff; color:#fff;line-height:35px; font-family: 'Open Sans Condensed', sans-serif; font-size:16px; font-weight:700; }
+.PlaFilter ul.cats li > a.catbox:hover,
+.PlaFilter ul.cats li.sel > a.catbox { text-decoration:none; background-color:#fff; color:#58d3ff; border-left:1px solid #58d3ff;}
+.PlaFilter ul.cats li:last-child a.catbox { border-right:none !important; }
+.PlaFilter ul.cats li:first-child a.catbox { border-left:none !important; }
+/*right filters*/
+.PlaFilter ul.filters li { position:relative; width:25%; }
+.PlaFilter ul.filters li > a.filter { border-left:1px solid #fff; background-color:#ace8ff; display:block; background-repeat:no-repeat; background-position:center center; text-indent:-9999px;  }
+.PlaFilter ul.filters li:first-child > a.filter { border-left:1px solid #ace8ff !important; }
+.PlaFilter ul.filters li > a.alpa { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/alphabetic_icon.png); }
+.PlaFilter ul.filters li > a.favo { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/favourite_icon.png); }
+.PlaFilter ul.filters li > a.near { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/nearme_icon2.png); }
+.PlaFilter ul.filters li > a.tred { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/trending_icon.png); }
+.PlaFilter ul.filters li:hover,
+.PlaFilter ul.filters li:hover > a.filter{ background-color:#58d3ff; }
+.PlaFilter ul.filters li.sel a.filter,
+.PlaFilter ul.filters li > a.filter:hover { background-color:#58d3ff; text-decoration:none; }
+.PlaFilter ul.filters .smenu { display:none; position:absolute; top:35px;}
+.PlaFilter ul.filters .smenu a.l2 { border-top:1px solid #fff; display:block; width:150px; background-color:#58d3ff; padding:6px 2px 6px 8px; color:#fff;}
+.PlaFilter ul.filters .smenu a.l2_sel,
+.PlaFilter ul.filters .smenu a.l2:hover { background-color:#1ebff9; }
+.PlaFilter ul.filters li:hover .smenu { display:block;}
+
+ul.rateimgs { float:left; }
+ul.rateimgs > li { float:left; margin-right:1px; text-indent:-999px; width:20px; height:20px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/wiz_gray_icon.gif) no-repeat center center; background-size:cover !important; }
+ul.wizrate > li.on { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/wiz_blue_icon.gif) no-repeat center center; }
+ul.wizersrate > li.on { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/wiz_red_icon.gif) no-repeat center center; }
+
+.SectionPlaces .sct_icons { position:relative; top:-5px;}
+.SectionPlaces .list_rate { position:absolute; bottom:6px; right:8px; z-index:5; }
+.SectionPlaces .list_rate ul.rateimgs > li { width:15px; height:15px;}
+
+.PlaDetPage .slides li.defSlide { overflow:hidden; }
+.PlaDetPage .slides li.defSlide .overimg_block { background:none !important; left:50px;}
+.PlaDetPage .headslide_info { position:absolute; left:12px; bottom:10px; right:85px; }
+.PlaDetPage .headslide_info h3,
+.PlaDetPage .headslide_info h2 { color:#fff; text-shadow:1px 1px #000;}
+.PlaDetPage .headslide_info h2 { font-size:24px; line-height:26px; }
+.PlaDetPage .com_descr { position:relative; padding:2px 0 2px 2px; }
+.PlaDetPage .com_descr .subphoto { position:absolute; left:2px; top:2px; width:35px; height:35px; overflow:hidden; background-color:#9b9c9c; }
+.PlaDetPage .com_descr .subinfo { padding:0 0 0 40px; height:35px; overflow:hidden; }
+.PlaDetPage .com_descr .no_s_photo { padding:4px 0 0 15px; }
+.PlaDetPage #PlaGallery_Slider .ArtGal-next { bottom:20px;}
+.PlaDetPage #PlaGallery_Slider .ArtGal-prev { bottom:42px !important; display:none;}
+.PlaDetPage .camIcon { bottom:20px; }
+.PlaDetPage .subslide { bottom:42px !important; -webkit-transition:0.5s; transition:0.5s; }
+.PlaDetPage .com_descr .title { color:#000; font-size:15px; line-height:18px; font-weight:400; padding:1px 0 1px 0;}
+.PlaDetPage .com_descr time { font-size:10px; line-height:12px;}
+.PlaDetPage .rate_block .inner_col { float:left; width:48%;}
+.PlaDetPage .rate_block .inner_col:last-child { width:52% !important;}
+.PlaDetPage .rate_block p.label { margin-right:5px; float:left; text-align:center; font-size:14px; line-height:14px; font-weight:700; }
+.PlaDetPage .rate_block p.label > small { font-weight:700;}
+.PlaDetPage .rate_block .rateimgs { padding-top:4px; }
+.PlaDetPage .contacts { display:table; width:100%; }
+.PlaDetPage .contacts > div { display:table-cell; vertical-align:middle; color:#fff; font-size:12px; line-height:14px;}
+.PlaDetPage .contacts .sep { width:8px;}
+.PlaDetPage .contacts .contact { border-radius:4px; height:36px;}
+.PlaDetPage .contacts .delivery { width:28px; height:28px; }
+.PlaDetPage .contacts .phone { padding:4px 6px 4px 28px; background:#65ccf5 url(http://cyprus.wiz-guide.com/mobile/layout/images/phone_icon.png) no-repeat 4px center; font-weight:700; text-align:center; -webkit-touch-callout: default !important; 
+-webkit-user-select:text !important; 
+user-select:text !important;
+}
+.PlaDetPage .contacts > div a,
+.PlaDetPage .contacts > div a:hover,
+.PlaDetPage .contacts > div a:active { color:#fff; font-size:12px; line-height:14px; }
+.PlaDetPage .contacts .address { padding:4px 18px 4px 28px; background:#65ccf5 url(http://cyprus.wiz-guide.com/mobile/layout/images/address_icon.png) no-repeat 4px 7px; font-size:11px; line-height:13px; position:relative; }
+.PlaDetPage .viewLocIcon { position:absolute; right:4px; top:7px; width:18px; height:21px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/address2_icon.png) no-repeat; float:right; margin-left:4px; text-indent:-9999px;}
+
+.PlaDetPage .bot_bl { margin-bottom:10px; position:relative; }
+.PlaDetPage .bot_bl .bl_head { display:block; width:100%; color:#fff; font-size:18px; line-height:20px; text-align:center; background-color:#4274b9; padding:10px 0 10px 0; }
+.PlaDetPage .bot_bl .bl_head:hover { text-decoration:none; background-color:#3764a3;}
+.PlaDetPage .bot_bl .wizs { background-color:#ed2025;}
+.PlaDetPage .bot_bl .wizs:hover { background-color:#d5161a; }
+.PlaDetPage .bot_bl .det_body { display:block; padding:10px 8px 15px 8px; }
+.PlaDetPage .bot_bl .w_arr { position:absolute;right:30%; width: 0; height: 0; }
+.PlaDetPage .bot_bl .w_arr_d { top:15px; border-left: 10px solid transparent;border-right: 10px solid transparent; border-top: 10px solid #fff;}
+.PlaDetPage .bot_bl .w_arr_r { top:10px; border-top: 10px solid transparent;border-bottom: 10px solid transparent; border-left: 10px solid #fff;}
+
+.PlaDetPage .bot_bl .checkin { background-color:#019fff;}
+.PlaDetPage .bot_bl .checkin:hover { background-color:#4274b9; }
+
+/* comments */
+.ComBlock { padding-bottom:45px; }
+.ComBlock .com_item { margin-top:20px; position:relative; }
+.ComBlock .com_item:first-child { margin-top:0; }
+.ComBlock .com_item .com_block { border:2px solid #ff4a53; width:80%; float:left; min-height:30px; }
+.ComBlock .com_item .com_block > .inner { padding:6px 2px 6px 6px;}
+.ComBlock .com_item:first-child .com_block { width:99%; }
+.ComBlock .com_item:nth-child(2n+2) .com_block { float:right; }
+.ComBlock .com_item .com_arrow { position:absolute; width:34px; height:21px; left:20px; bottom:-18.5px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/com_ar_left.png) no-repeat; }
+.ComBlock .com_item .sub_photo { position:absolute; width:45px; height:45px; left:0; bottom:-65px; }
+.ComBlock .com_item .sub_photo img { border-radius:25px; }
+.ComBlock .com_item:nth-child(2n+2) .com_arrow { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/com_ar_right.png) no-repeat !important; left:auto !important; right:20px; }
+.ComBlock .com_item:nth-child(2n+2) .sub_photo { left:auto !important; right:0; }
+.ComBlock .com_item .com_body { margin-top:15px; }
+.ComBlock .com_item .com_body .descr { font-size:12px; padding-top:4px;}
+.ComBlock h3 { color:#000; font-size:18px; line-height:20px;}
+.ComBlock h3 > img { margin-right:6px;}
+.ComBlock p.com_by { padding-left:25px;}
+.ComBlock p.com_by,
+.ComBlock p.com_by time { font-size:11px;line-height:13px; }
+.ComBlock .com_body > img { float:left; padding:0 10px 8px 0; }
+
+/* LatestWizs */
+.LatestWizs { background-color:#cdedfc; padding-bottom:70px; }
+.LatestWizs .head { background-color:#a8d3ff; padding:8px; }
+.LatestWizs .head h2 { font-weight:300 !important; float:left; }
+.LatestWizs .head img.locicon { float:right; }
+.LatestWizs .main_body { padding:10px 8px 10px 8px; }
+.LatestWizs .com_item { margin-top:12px; position:relative; }
+.LatestWizs .com_item:first-child { margin-top:0; }
+.LatestWizs .com_item .com_block { width:230px; float:left; min-height:73px; background-color:#ffffff; -moz-box-shadow: 1px 1px 1px 1px #afcbd7; -webkit-box-shadow:1px 1px 1px 1px #afcbd7; box-shadow: 1px 1px 1px 1px #afcbd7; }
+.LatestWizs .com_item .com_block > .inner { padding:10px 2px 6px 6px; position:relative; }
+.LatestWizs .com_item:nth-child(2n+2) .com_block { float:right; background-color:#f0f9fe; }
+.LatestWizs .com_item .com_arrow { position:absolute; width:18px; height:18px; left:20px; bottom:-18px; }
+.LatestWizs .com_item .com_arrow > .arrow { width:0; height:0; border-style:solid; }
+.LatestWizs .com_item .com_arrow > .arrow_l { border-width: 18px 18px 0 0; border-color:#ffffff transparent transparent transparent; }
+.LatestWizs .com_item .com_arrow > .arrow_r { border-width: 0 18px 18px 0; border-color: transparent #f0f9fe transparent transparent; }
+.LatestWizs .com_item:nth-child(2n+2) .com_arrow { left:auto !important; right:20px; }
+.LatestWizs .com_item .sub_photo { position:absolute; width:50px; height:50px; left:0; bottom:-70px; }
+.LatestWizs .com_item .sub_photo img { border-radius:25px; }
+.LatestWizs .com_item:nth-child(2n+2) .sub_photo { left:auto !important; right:0; }
+.LatestWizs .com_item .teaser_box { position:absolute; left:6px; top:10px; width:44px;}
+.LatestWizs .com_item .info { min-height:34px; padding-left:50px;}
+.LatestWizs h3 { font-size:14px; line-height:16px; font-weight:700 !important; color:#44ceff; padding-left:14px; background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/pinblue_icon.png); background-position:0 4px; background-repeat:no-repeat; }
+.LatestWizs h3 a:link, .LatestWizs h3 a:visited { font-size:14px; line-height:16px; color:#44ceff; font-weight:700 !important;}
+.LatestWizs .com_item p,
+.LatestWizs .com_item time {color:#44ceff;}
+.LatestWizs .com_item p.small,
+.LatestWizs .com_item time { font-size:10px; line-height:12px;}
+.LatestWizs .com_item p.emp{ padding:4px 0 0 0; font-size:13px; line-height:15px; }
+.LatestWizs .tot_btn { float:right; position:relative; margin-right:14px;}
+.LatestWizs .tot_btn .nq_label { width:16px; height:16px; background-color: #ff0023; text-align:center; line-height:16px; position:absolute; top:-6px; right:-6px; float:right; border-radius:16px; -moz-border-radius:16px; -webkit-border-radius:16px; color:#fff; }
+
+/* Talk of Town*/
+.que_box { margin:6px 0 10px 0; border:1px solid #818284; background-color:#fff; height:23px; text-align:center; cursor:pointer; padding-top:2px;  }
+.que_box span { display: inline; color:#b4b4b4; line-height:20px; letter-spacing:2.5px;}
+.que_box img {  margin-right:12px;}
+
+.reply_box { position:absolute; right:0; bottom:0; width:25px; }
+.reply_box .inner { position:relative; }
+.reply_box a.reply_btn { z-index:9; float:right;  width:25px; height:16px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/reply_btn.png) no-repeat; cursor:pointer; text-indent:-9999px;}
+.reply_box a.reply_btn:hover { text-decoration:none;}
+.reply_box .t_ans_box { position:absolute; float:right; width:16px; height:16px; right:-8px; top:-10px; background-color:#ff0000; z-index:10; text-align:center; color:#fff; font-weight:700; font-size:11px; line-height:15px; border-radius:8px; }
+
+.TalkOfTown { padding:4px 4px 8px 4px;}
+.TalkOfTown time { padding-top:2px; display:block; font-size:10px; line-height:12px;}
+.TalkOfTown .itembox { margin-top:7px; border:1px solid #7fdaf9; padding:6px; position:relative;}
+.TalkOfTown .itembox .sub_photo { position:absolute; top:6px; left:6px; width:50px; height:50px; }
+.TalkOfTown .itembox .sub_photo img { border-radius:25px; }
+.TalkOfTown .itembox .info { padding-left:55px; min-height:55px; position:relative; }
+.TalkOfTown .itembox .info time { color:#5dd1ff; }
+.TalkOfTown h2 { color:#5dd1ff; text-shadow:none; font-family: 'Open Sans', sans-serif; font-size:14px !important; line-height:18px !important; }
+.TalkOfTown p.sum { padding-top:2px; color:#5dd1ff; font-size:14px;}
+.TalkOfTown .qstanswers { display:none; margin-top:15px; border-top:3px solid #63d0f7; padding:35px 0 10px 0; position:relative; }
+.TalkOfTown .qstanswers > span.arrow { display:block; position:absolute; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/qstanswers_arrow.jpg) no-repeat; width:65px; height:28px; left:50%; top:-3px; margin-left:-32px;}
+.TalkOfTown .ansbox { margin-bottom:12px; border-bottom:1px solid #5ed2fb; padding-bottom:12px; }
+.TalkOfTown .ansbox p.answer { color:#000; font-size:14px; line-height:16px;}
+.TalkOfTown .qstanswers textarea { border:1px solid #000; padding:8px; margin-top:5px; width:100%; text-align:center;}
+.TalkOfTown p.logmsg { font-style:italic; margin-top:5px; font-size:12px;}
+.TalkOfTown p.logmsg a { color:#59d3ff; text-decoration: none; }
+.TalkOfTown p.logmsg a:hover { text-decoration: underline;	}
+.TalkOfTown a.subqstans { float:right; margin-top:7px; width:170px; text-align:center; background-color:#019fff; color:#fff; height:35px; font-size:16px; font-weight:700; line-height:35px; }
+.TalkOfTown a.subqstans:hover { background-color:#0184d4; text-decoration:none;}
+.TalkOfTown .maxlength-feedback { float:left; color:#717171; }
+
+/**** Events *****/
+.load_box { display:none; position:absolute; top:0; left:0; right:0; bottom:0; background-color:#fff; z-index:1000; filter: alpha(opacity=80); -moz-opacity: 0.8; opacity: 0.8;  }
+.load_box > .inner { display:table; width:100%; height:100%; }
+.load_box > .inner .loading { display:table-cell; vertical-align:middle; height:100%; text-align:center; }
+
+.EveCalendar { background-color:#f0f0f0; }
+
+.EveFilter ul.eve_cats { width:100%; margin:0 0 10px 0;}
+.EveFilter ul.eve_cats > li { float:left; width:25%;}
+.EveFilter ul.eve_cats > li > a {display:block; border-left:1px solid #fff; height:36px; text-align:center; background-color:#ace8ff; background-repeat:no-repeat; background-position:center center;}
+.EveFilter #catfil_C { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/movie_icon.png); }
+.EveFilter #catfil_T { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/theatre_icon.png); }
+.EveFilter #catfil_M { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/music_icon.png); }
+.EveFilter #catfil_E { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/star_icon.png); }
+.EveFilter ul.eve_cats > li:first-child > a { border-left:none;}
+.EveFilter ul.eve_cats > li > a.selected,
+.EveFilter ul.eve_cats > li > a:hover{ text-decoration:none; background-color:#62cdf6;}
+.EveFilter .cal_months { border-top:1px solid #5cd1fd; border-bottom:1px solid #62cdf6; padding:10px 0 10px 0; position:relative; margin-bottom:5px; text-align:center; }
+.EveFilter .cal_months ul li { display:none; font-size:18px; line-height:20px; color:#62cdf6;  }
+.EveFilter .cal_months ul li:first-child { display:block;}
+.EveFilter .cal_months a.calmon { width:15px; height:22px; display:block; position:absolute;top:9px; }
+.EveFilter .cal_months a.prev { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/calendar_left_btn.png) no-repeat; left:8px; }
+.EveFilter .cal_months a.next { background:url(http://cyprus.wiz-guide.com/mobile/layout/images/calendar_right_btn.png) no-repeat; right:8px; }
+.EveFilter .cal_months a.calmon:hover { text-decoration:none; }
+
+.EveCalendar .monthCalendar { position:relative; }
+.EveCalList { width:auto; margin:0 auto;}
+.EveCalList td { width:35px; height:35px; text-align:center; padding-right:6px; padding-bottom:2px; vertical-align:middle;}
+.EveCalList td:last-child { padding-right:0;}
+.EveCalList thead td { height:30px; color:#59d3ff; font-weight:700;}
+.EveCalList a.calday { display:block; width:35px; height:35px; color:#59d3ff; line-height:35px; font-size:18px; font-weight:400; border-radius:18px; -moz-border-radius:18px; -webkit-border-radius:18px;}
+.EveCalList a.day_off { color:#afebfa; cursor:default; font-weight:300;}
+.EveCalList a.calday:hover { text-decoration:none;}
+.EveCalList a.day_on:hover,
+.EveCalList a.day_selected { background-color:#58d3ff;color:#fff; font-weight:700;}
+
+.EventsList { background-color:#f0f0f0; position:relative; padding-top:10px; padding-bottom:1px; }
+.EventsList .list_box .info .cell:first-child { width:43px; padding:0 10px 0 5px !important;}
+.EventsList .icon { position:relative; height:42px; background-color: transparent; background-position:top center; background-repeat:no-repeat; }
+.EventsList .notres { text-align:center; background-color:#fff; padding:10px 0 10px 0; }
+.T_icon { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/theatre_icon.png); }
+.C_icon { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/movie_icon.png); }
+.M_icon { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/music_icon.png); }
+.E_icon { background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/star_icon.png); }
+
+.EveDetPage .headslide_info { position:absolute; left:4px; bottom:8px; right:4px; }
+.EveDetPage .headslide_info .titles { float:left; width:250px;}
+.EveDetPage .headslide_info h3,
+.EveDetPage .headslide_info h2 { color:#fff; text-shadow:1px 1px #000;}
+.EveDetPage .headslide_info h2 { font-size:20px; line-height:22px; }
+.EveDetPage .icon { float:left; width:43px; height:32px; margin-right:12px; background-color: transparent; background-position:top center; background-repeat:no-repeat; margin-bottom:5px;}
+
+.SearchPage .top_box { padding:16px 8px 16px 8px;}
+.SearchPage input { float:left; height:32px; }
+.SearchPage input[type=text] { width:86%; margin-right:5px; }
+.SearchPage input[type=submit] { background:#019fff url(http://cyprus.wiz-guide.com/mobile/layout/images/search_icon_s.png) no-repeat center center; width:36px; border:none; }
+.SearchPage input[type=submit]:hover { background-color:#0184d4 }
+.SearchPage .kwords { margin-top:4px;}
+.SearchPage .kwords > .kword { margin-top:4px; float:left; margin-right:4px; height:22px; padding:0 6px 0 6px; line-height:20px; background-color:#c3c3c3; color:#000; font-size:10px;}
+.SearchPage .kwords > .kword:hover { text-decoration:none; background-color:#a8a8a8;}
+.SearchPage p.result { padding:10px; text-align:center; font-size:12px; line-height:14px; }
+.SearchPage p.result > em { font-weight:700;font-size:12px; }
+.SearchPage .no_result {  border-top:1px solid #a7abae;  }
+.SearchPage .found_res { color:#fff; background-color:#59d4ff;}
+.SearchPage .found_res > em { color:#fff; }
+
+/* Member */
+.MemBlock { margin-bottom:20px; }
+.MemBlock h2 {font-size:18px; line-height:20px; color:#fff; background-color:#58d3ff; padding:8px 6px 8px 10px; margin-bottom:0; }
+.MemBlock .notfound { font-size:12px; padding:8px 0 0 5px; font-style:italic;}
+.MemBlock .item { padding:8px 5px 8px 8px; border-bottom:1px solid #58d2ff; position:relative; }
+.MemBlock .item .t_img { position:absolute; top:10px; left:8px; width:90px; height:70px;}
+.MemBlock .item .info { padding-left:100px; min-height:70px; padding-top:2px;}
+.MemBlock h3 { font-size:18px; line-height:20px; color:#5dd1ff; padding-left:22px; background-image:url(http://cyprus.wiz-guide.com/mobile/layout/images/pinblue_icon_b.png); background-position:0 2px; background-repeat:no-repeat; font-weight:700; }
+.MemBlock h3 a:link, .MemBlock h3 a:visited {font-size:16px; line-height:18px; color:#5dd1ff; font-weight:700;}
+.MemBlock h4 { font-family: 'Open Sans', sans-serif; font-size:14px; line-height:16px; color:#5dd1ff; font-weight:400; padding-top:5px; }
+.MemBlock .item time { display:block; padding-top:4px; color:#5dd1ff;}
+.MemBlock a.more_btn { margin:12px 8px 0 0; float:right; color:#fff; padding:6px 15px 6px 15px; text-align:center;  background-color:#019fff; font-size:14px; font-weight:700;}
+.MemBlock a.more_btn:hover {  background-color:#0184d4; text-decoration:none; }
+
+.MemCover { margin-bottom:20px; background-color:#f8f8f8; position:relative; }
+.MemCover h2 { text-shadow:1px 1px #000; padding-bottom:8px; font-size:24px; line-height:26px;}
+.MemCover .info { position:absolute; left:10px; bottom:10px; width:200px; }
+.MemCover .info > .inner { display:table; position:relative; }
+.MemCover .info > .inner > .cell { display:table-cell; vertical-align:bottom; height:80px;}
+.MemCover .info .prof_pic { padding-right:10px; width:100px; height:100px; }
+.MemCover .info .prof_pic img { border-radius:50px;}
+.MemCover .actbtn { display:block; position:absolute; bottom:10px; right:8px; width:20px; height:16px; color:#fff; cursor:pointer; background:#58d3ff url(http://cyprus.wiz-guide.com/mobile/layout/images/cam_icon_s.png) no-repeat center center; padding:4px; }
+.MemCover .actbtn:hover { background-color:#4ab5db; }
+.MemCover .profpic { bottom:0; right:auto !important; left:0; }
+
+.QstBlock h3 { padding-left:0 !important; background-image:none !important;}
+.QstBlock .reply_box { position:absolute; right:10px; bottom:8px; }
+
+
+/* Sun photos*/
+.SubPhotosBlock .blo_body { background-color:#64cdf5;}
+
+.SubPhotosForm p.msg { padding:15px; color:#fff;}
+.SubPhotosForm #overlay_bg { display:none; position:absolute; top:0; left:0; bottom:0; right:0;z-index:11; }
+.SubPhotosForm .main_body { padding:15px 10px 15px 10px; }
+.SubPhotosForm #subbtn { display:none; }
+.SubPhotosForm #popup { display:none; }
+.SubPhotosForm #popup > .pop_cont > .pop_cell #pop_msg { width:250px; position:relative; left:-280px; padding:15px; background-color:#ff0000; color:#fff; }
+.SubPhotosForm .avantars { margin:10px 0 10px 0; }
+.SubPhotosForm .avantars p { color:#fff; text-shadow:1px 1px #027cc6;}
+.SubPhotosForm .avantars p.options { padding-top:2px;}
+.SubPhotosForm .avantars p.options img { float:left; margin-right:2px; border:2px solid #61d5ff; cursor:pointer; }
+.SubPhotosForm .avantars p.options img.selected,
+.SubPhotosForm .avantars p.options img:hover { border:2px solid #fff; }
+.SubPhotosForm input.actbtn { padding: 0 10px 0 10px; }
+
+/*form*/
+.SuggestForm h2 {font-size:18px; line-height:20px; color:#fff; background-color:#58d3ff; padding:8px 6px 8px 10px; margin-bottom:0; }
+.SuggestForm { position:relative; margin-bottom:30px; }
+.SuggestForm .fbody { -webkit-box-shadow: 0 8px 6px -6px #e4e4e4; -moz-box-shadow: 0 8px 6px -6px #e4e4e4; box-shadow: 0 8px 6px -6px #e4e4e4; border:2px solid #fbfbfb; border-top:none;}
+.SuggestForm .fbody:after { content:" "; position:absolute; right:20px; bottom:-30px; width:30px; height:33px; background:url(http://cyprus.wiz-guide.com/mobile/layout/images/sug_icon.png) no-repeat; }
+.SuggestForm .fbody .inner { padding:20px 20px 20px 15px; }
+.SuggestForm .fbody input { border:none; font-size:16px; font-weight:700; }
+.SuggestForm .fbody input[type=text] { margin-bottom:5px; float:right; clear:both; background-color:#efefef; height:46px; padding:0 0 0 5px; color:#5bd6ff; width:99%;}
+.SuggestForm .fbody input[type=submit] { float:right; margin:10px 1px 0 0; height:34px; background-color:#019fff; padding:0 15px 0 15px; color:#fff; }
+.SuggestForm .fbody input[type=submit]:hover { background-color:#0184d4; }
+.SuggestForm .fbody input[type=text]:focus,
+.SuggestForm .fbody input[type=submit]:focus { outline:none; }
+.SuggestForm :-ms-input-placeholder {font-size:16px; color:#5bd6ff; font-style:normal; font-weight:700;}
+.SuggestForm :-ms-input-placeholder {font-size:16px; color:#5bd6ff; font-style:normal; font-weight:700;}
+.SuggestForm ::-webkit-input-placeholder {font-size:16px; color:#5bd6ff; font-style:normal; font-weight:700;}
+.SuggestForm p#actmsg { color:#5bd6ff; font-weight:700; font-style:italic; padding-bottom:8px;}

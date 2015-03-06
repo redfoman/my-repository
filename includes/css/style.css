@@ -1,0 +1,65 @@
+
+/* --- Styles for General Tags ----------------------------------------------------------------------- */
+
+	body {
+	/*	margin: 0px; */
+		padding: 0;
+		background-color: #FFFFFF;
+	}
+	
+	body, p, table, thead, tbody, tfoot, tr, td, th, span, ul, li, input, select, textarea, em { font-family:"Open Sans", Arial, serif; font-weight:400; font-size:14px; line-height:18px; color:#000000;}
+	
+	.ed_body ul {
+		color: #000;
+		margin: 15px 0 15px 30px;      
+		padding: 0;
+	}
+	.ed_body ul li {
+		color: #000;
+		font-size:14px; line-height:18px;
+		padding: 4px 0px 4px 20px;
+		font-weight:400;
+		background:url(images/bullet.png) no-repeat 0 8px;
+	}
+	.ed_body ul:first-child { margin:0 0 15px 30px; }
+
+	li a:link,  li a:visited  {	color: #59d3ff; text-decoration: none; font-weight: normal; }
+	li a:active, li a:hover { color: #59d3ff; text-decoration: underline; font-weight: normal; 	}
+
+	a:link,  a:visited { color: #59d3ff; text-decoration: none; font-weight: normal; }
+	a:active, a:hover { color: #59d3ff; text-decoration: underline; font-weight: normal; }
+
+
+/* --- User Styles for Page ----------------------------------------------------------------------- */
+
+	.bd_Title {
+		color: #000000;
+		font-size: 22px;
+		line-height: 26px;	
+		text-decoration: none;
+		margin-bottom:18px;
+	}
+	
+	.bd_SubTitle {
+		color: #000000;
+    	margin: 0px;
+		font-size: 18px;
+		line-height: 20px;	
+		text-decoration: none;
+	}
+	
+	.bd_Emphasis {
+		font-size: 14px;
+		color: #000000;	
+		font-weight: 700;
+	}
+
+	.bd_Quote {
+		color: #505050;
+		font-style: italic;
+	}
+	
+	.bd_Small {
+		font-size: 12px;
+		line-height: 16px;	
+	}	
