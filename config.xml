@@ -17,3 +17,4 @@
         android:largeScreens="false" 
         android:smallScreens="false" />
 </gap:config-file>	
+<access origin="http://phonegap.com" subdomains="true" />
